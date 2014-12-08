@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Machine Accuracy Comparison</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1 id="page-title">Machine Accuracy Comparison</h1>
+
+    <footer id="data-source">
+        <label>
+            <input type="radio" name="data-source" value="actual" checked>
+            Actual
+        </label>
+
+        <label>
+            <input type="radio" name="data-source" value="maxDepth">
+            Decision Tree Metadata - Max Depth
+        </label>
+
+        <label>
+            <input type="radio" name="data-source" value="normalized">
+            Decision Tree Metadata - Normalized
+        </label>
+
+        <label>
+            <input type="radio" name="data-source" value="textTree">
+            Decision Tree Text Features - Feature Set of 5000 words
+        </label>
+
+        <label>
+            <input type="radio" name="data-source" value="textNaiveBayes">
+            Naive Bayes Text Features
+    </footer>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
